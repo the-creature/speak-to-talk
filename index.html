@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Speak to talk</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container {
+        width:98%;
+        margin:auto;
+        max-width:680px;
+    }
+
+    .message {
+        color:#999;
+        padding: 1em 0;
+    }
+    .todo {
+        min-height:6em;
+        background-color: #fff;
+        margin-bottom: 0.5em;
+        padding: 1em;
+        color:#999;
+        -webkit-box-shadow: 0 0px 3px #BDBDBD;
+        box-shadow: 0 0px 3px #BDBDBD;
+        transition: all 0.3s ease-in-out;
+    }
+    .controls {
+        text-align:center;
+    }
+    .select {
+        border: 1px solid #999;
+    }
+
+    .final {
+        color: #999;
+    }
+
+    .interim {
+        color: #CCC;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="message" class="message">Click "Talk" and begin speaking.</div>
+    <div class="todo"> <span id="final_span" class="final"></span>
+      <span id="interim_span" class="interim"></span>
+    </div>
+    <div class="controls">
+      <button id="talk_button" type="button" class="btn btn-default" onclick="talkWithApp(event)">Talk</button>
+      
+      <select id="language" class="select">
+        <option selected="selected">Select Your Language</option>
+      </select>
+    </div>
+  </div>
+</body>
+  <script   src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="./js.js"></script>
+</html>

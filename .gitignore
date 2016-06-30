@@ -1,0 +1,13 @@
+DS_Store
+node_modules
+npm-debug.log
+bower_components
+nbproject
+.idea
+Thumbs.db
+/lnl_xoom_creature.sln
+/lnl_xoom_creature.v12.suo
+/Web.config
+.project
+.settings
+setup.js
